@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Login </title>
+        <link rel="stylesheet" type="text/css" href="police.css">
+        <script type="text/javascript" src="js/alogin_validation.js"></script>
+    </head>
+    <body>
+       <div id="main"> 
+             <nav>
+                 <img src="image\logo1.png" width="200" height="100"> 
+                <ul>
+                    <li> <a href="index.html"> Home </a> </li> 
+                    <li> <a href="about.html"> About us</a> </li> 
+                    <li> <a href="services.html">Services</a> </li> 
+                    <li> <a href="faq.html"> FAQs</a> </li>  
+                </ul>               
+            </nav> 
+           <div class="box">
+                <img src="image\user1.jpg" class="avatar">
+            <h1>Investigator Login here </h1>
+            <form name="form1" method="post" action="investigate.jsp">
+                
+                <p> Login-ID </p>
+                <input type="text" name="t0" placeholder="Enter username">
+                <p> Password </p>
+                <input type="password" name="t1" placeholder="Enter password"> <br> <br>
+                <input type="submit" value="Login">
+            </form>       
+            <form action="changepass.html">
+               <input type="submit"  value="Change password">
+            </form>
+           </div>
+          <div class="loginbox">
+            <img src="image\user1.jpg" class="avatar">
+            <h1>Police Login here </h1>
+            <form name="form1" method="post" action="adminlogin.jsp" onsubmit="return vaidate()">
+                
+                <p> Login-ID </p>
+                <input type="text" name="t1" placeholder="Enter username">
+                <p> Password </p>
+                <input type="password" name="t2" placeholder="Enter password"> <br> <br>
+                <input type="submit" value="Login">
+            </form>
+            <form action="changepass.html">
+                <input type="submit"  value="Change password">
+            </form>
+            
+          </div>  
+        </div>
+         
+    </body>
+</html>

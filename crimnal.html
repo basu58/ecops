@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>www.pssoft.com</title>
+</head>
+<center>
+<h1><U>Crimnal Records</U></h1><h3 align="right"><a href="logout1.jsp">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="gss.html">About us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="adminlogin.jsp">Back</a></h3><br><br>
+</center>
+<script type="text/javascript" src="js/cr_validation.js"></script>
+<form action="crimnal.jsp" method="post" name="crm" onsubmit="return validate()">
+<table align="left">
+<tr>
+<td><B>Crimnal id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t1"></td>
+</tr>
+
+
+<tr>
+<td><B>First name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t2"></td>
+</tr>
+
+<tr>
+<td><B>Last name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t3"></td>
+</tr>
+
+<tr>
+<td><B>Father's name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t4"></td>
+</tr>
+
+<tr>
+<td><B>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td>
+<textarea rows="5" cols="16" name="t5"></textarea>
+</td><td><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nature of crime</B><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t6"></td>
+</tr>
+
+<tr>
+<td><B>Date of birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t7"><B>dd/mm/yy</B></td>
+</tr>
+
+<tr>
+<td><B>Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="radio" name="t8" value="male" checked>Male<input type="radio" name="t8" value="female">Female</td>
+</tr>
+
+<tr>
+<td><B>Complextion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><select  name="t9">
+<option value="very fair">very fair</option>
+<option value="dark">dark</option>
+<option value="fair">fair</option>
+</td>
+</tr>
+
+<tr>
+<td><B>Height&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t10"><B>cms</B></td>
+</tr>
+
+<tr>
+<td><B>Weight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t11"><B>kgs</B></td>
+</tr>
+
+<tr>
+<td><B>Identification mark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><textarea rows="5" cols="16" name="t12"></textarea></td>
+</tr>
+
+<tr>
+<td><B>Privious crime record&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><textarea rows="5" cols="16" name="t13"></textarea></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>District</B><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="t14">
+<option value="Hyderabad">Hyderabad</option>
+<option value="East Godawadi">East Godawadi</option>
+<option value="West Godawadi">West Godawadi</option>
+<option value="Krishna">Krishna</option>
+<option value="Vijaywada">Vijaywada</option>
+<option value="Vizaq">Vizaq</option>
+<option value="Guntur">Guntur</option>
+<option value="Shrikakulam">Shrikakulam</option>
+<option value="Neloor">Neloor</option>
+<option value="Chitoor">Chitoor</option>
+</select></td>
+</tr>
+
+<tr>
+<td><B>F.I.R. No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="text" name="t15"></td><td><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Area of opration<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B><input type="text" name="t16"></td>
+</tr>
+<tr>
+<td><B>Upload image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B></td><td><input type="file" name="t17"></td>
+</tr>
+<tr>
+<td><br><br><input type="submit" value="Submit" style="width:100;height:30"></td><td><br><br><input type="reset" value="Reset" style="width:100;height:30"></td>
+</tr>
+</table>
+</form>
+</html>

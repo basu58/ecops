@@ -1,0 +1,149 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: blueviolet;
+}
+#main{
+    width: 60%;
+    background-image: url(image/2.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 270px;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    transition: 0.8s all;
+}
+nav ul li a:hover{
+    background-color: #f39d1a;
+    color: #000;
+}
+.loginbox{
+    width: 325px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    top: 63%;
+    left: 65%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.box{
+    width: 317px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    top: 63%;
+    left: 35%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 90%;
+    position: absolute;
+    top: -50px; 
+    margin-left: 90px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: orange;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.loginbox input[type="password"], input[type="text"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+
+
+.box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.box input{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.box input[type="password"], input[type="text"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    color: #fff;
+    font-size: 16px;
+}
+.box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.box input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}

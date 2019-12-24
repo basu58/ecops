@@ -1,0 +1,134 @@
+<%@ page language="java"%>
+<%!
+int i,j;
+%>
+
+<html>
+<script language="javascript">
+function fun1()
+{
+if (f1.tn.value=="")
+alert("Name should not be empty");
+}
+function fun2()
+{
+if (f1.fhn.value=="")
+alert("Father Name should not be empty");
+}
+function fun3()
+{
+if (f1.age.value=="")
+alert("Please Enter the age");
+}
+function fun4()
+{
+if (f1.toccup.value=="")
+alert("Please Enter the Occupation");
+}
+function fun5()
+{
+if (f1.add.value=="")
+alert("Please Enter the Address");
+}
+function fun6()
+{
+i=f1.phno.value
+if (i!=10)
+alert("Please Enter the Contact no.");
+}
+function click1()
+{
+if(f1.tn.value==""||f1.fhn.value==""||f1.toccup.value==""||f1.age.value==""||f1.phno.value==""||f1.add.value==""||f1.p-station.value==""||f1.aoff.value==""||f1.dtcom.value==""||f1.property.value==""||f1.comp.value=="")
+document.write("<center><font color=red size=6>Please fill all the fields<br><br><a href=test.html>Back</a></center>");
+}
+</script>
+<head>
+<title>www.pssoft.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#CCFFFF">
+<form name="f1" action="Complaint.jsp" method="get">
+<center>
+<h1>COMPLAINT FORM</h1>
+<h3 align="right"><a href="home.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="gss.html">About us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="citizen.html">Back</a></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table align="left">
+<tr><td>Name :</td><td><input type="text" name="tn" onblur="fun1()"></td></tr>
+<tr><td>Father's Name/Husband's Name :</td><td><input type="text" name="fhn" onblur="fun2()"></td></tr>
+<tr><td>Age :</td><td><input type="text" name="age" onblur="fun3()">&nbsp;&nbsp;&nbsp;Yrs.</td></tr>
+<tr><td>Occupation :</td><td><input type="text" name="toccup" onblur="fun4()"></td></tr>
+<tr><td>Residantial Address :</td><td><textarea cols="25" rows="5" name="add" onblur="fun5()"></textarea></td></tr>
+<tr><td>Contect Telephone no. :</td><td><input type="text" name="phno" onblur="fun6()"></td></tr>
+<tr><td>Date of Offence :</td><td>dd<select name="dd">
+<%
+for( i=1;i<=31;i++)
+{%>
+<option value=<%=i%>><%=i%></option>
+<%}
+%>
+</select>
+&nbsp;&nbsp;mm<select name="mm">
+<option value="january">january</option>
+<option value="february">february</option>
+<option value="march">march</option>
+<option value="april">april</option>
+<option value="may">may</option>
+<option value="june">june</option>
+<option value="july">july</option>
+<option value="august">august</option>
+<option value="september">september</option>
+<option value="october">october</option>
+<option value="november">november</option>
+<option value="december">december</option>
+</select>
+yy<select name="yy">
+<%
+for(j=1975;j<=2050;j++)
+{%>
+<option value=<%=j%>><%=j%></option>
+<%}
+%>
+</select>
+</td></tr>
+<tr><td>Time of Offence:</td><td>hh<select name="hh">
+<%
+for( i=0;i<=23;i++)
+{%>
+<option value=<%=i%>><%=i%></option>
+<%}
+%>
+</select>
+&nbsp;&nbsp;mm<select name="mm1">
+<%
+for( i=0;i<=59;i++)
+{%>
+<option value=<%=i%>><%=i%></option>
+<%}%>
+</select>
+</td></tr>
+<tr><td>District :</td><td><select name="dist">
+<option value="Hyderabad">Hyderabad</option>
+<option value="East Godawadi">East Godawadi</option>
+<option value="West Godawadi">West Godawadi</option>
+<option value="Krishna">Krishna</option>
+<option value="Vijaywada">Vijaywada</option>
+<option value="Vizaq">Vizaq</option>
+<option value="Guntur">Guntur</option>
+<option value="Shrikakulam">Shrikakulam</option>
+<option value="Neloor">Neloor</option>
+<option value="Chitoor">Chitoor</option>
+</select>
+</td></tr>
+<tr><td>Police-Station</td><td><input type="text" name="p-station"></td></tr>
+<tr><td>Area of Offense :</td><td><input type="text" name="aoff"></td></tr>
+<tr><td>Day and Time of Complaints:</td><td><input type="text" name="dtcomp"></td></tr>
+<tr><td>Lost Property and its particulars:</td><td><textarea cols=25 rows=5 name="property"></textarea></td></tr>
+<tr><td>Complaint :</td><td><textarea cols=25 rows=5 name="comp"></textarea></td></tr>
+<tr><td><input type=submit value="Submit" onclick="click1()"></td><td><input type=reset value=Reset></td></tr>
+</table>
+</center>
+</form>
+</body>
+</html>

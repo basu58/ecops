@@ -1,0 +1,142 @@
+
+CREATE TABLE complaint(cno int(20) primary key auto_increment,
+tn varchar(30),
+fhn varchar(30),
+age varchar(3),
+toccup varchar(30),
+addr varchar(100),
+phno varchar(11),
+dof varchar(20),
+tof varchar(20),
+dist varchar(30),
+pstation varchar(30),
+aoff varchar(100),
+dtcomp varchar(20),
+pro varchar(200),
+comp varchar(200),
+status varchar(10))
+;
+
+create table crimnal(cid varchar(4)primary key,
+cfn varchar(20),
+cln varchar(20),
+cfather varchar(30),
+cadd varchar(100),
+cnc varchar(30),
+cdob varchar(20),
+csex varchar(10),
+cplex varchar(20),
+cht varchar(20),
+cwt varchar(20),
+cidm varchar(50),
+cpcr varchar(200),
+cdist varchar(30),
+cfir varchar(10),
+cao varchar(50),
+cdt varchar(10),
+img longblob)
+;
+CREATE TABLE FIR (
+dist  varchar(30),
+plc  varchar(20),
+yr varchar(20),
+fno varchar (20),
+act  varchar(30),
+day  varchar(20),
+dtfrm1  varchar(20),
+dtto1 varchar(20),
+tp  varchar(20),
+tpfrm  varchar(20),
+tpto  varchar(20),
+dt varchar(20),
+tm1 varchar(20),
+toi  varchar(20),
+dist1 varchar(20),
+bno  varchar(20),
+pls varchar(20),
+sv1 varchar(20),
+am1 varchar(20),
+city  varchar(20),
+st1 varchar(20),
+cps  varchar(20),
+nm1  varchar(20),
+fnm varchar(20),
+dob varchar(20),
+nat varchar(20) ,
+pno varchar(20),
+occ varchar(20),
+addin varchar(20),
+rsn varchar(100),
+pc varchar(200),
+iq varchar(20),
+comp varchar(200),
+at varchar(20),
+ninv varchar(20),
+rinv varchar(20),
+idinv varchar(20),
+trs varchar(20),
+stat varchar(20)) 
+;
+
+CREATE TABLE INTRO(SNO VARCHAR(20),
+FNO VARCHAR(20),           
+NAME VARCHAR(30),          
+QUESTION VARCHAR(200),
+ANSWER VARCHAR(400))
+;
+
+create table investigator(name varchar(30),
+pid varchar(30),
+designation varchar(30),
+password varchar(10))
+;
+insert into  policelogin values('G.Meher','admin1','police','admin1');
+
+create table maillogin(mailid varchar(30) primary key,
+mailpass varchar(30),name varchar(30),
+designation varchar(20))
+;
+
+CREATE TABLE INBOX(MAILNO VARCHAR(5),
+MAILID VARCHAR(30),
+CONSTRAINT INBOX_MAILID_FK FOREIGN KEY(MAILID) REFERENCES MAILLOGIN(MAILID),
+SENDER VARCHAR(50),
+SUBJECT VARCHAR(200),
+SENDDATE VARCHAR(20),
+MESSAGE VARCHAR(400),
+ATTACH LONGblob)
+;
+
+create table policelogin(name varchar(30),
+pid varchar(30),
+designation varchar(30),
+password varchar(10))
+;
+
+insert into  policelogin values('G.Neheru','admin','police','admin');
+CREATE TABLE SUSPECT(SNO VARCHAR(5),
+FNO VARCHAR(10),
+NAME VARCHAR(30),
+FHN VARCHAR(30),
+ADDR VARCHAR(100),
+DOB VARCHAR(20),
+SEX VARCHAR(10),
+COMP VARCHAR(20),
+HEIGHT VARCHAR(20),
+WEIGHT VARCHAR(20),
+IDM VARCHAR(100),
+OCCP VARCHAR(30),
+INTRO VARCHAR(10))
+;
+
+CREATE TABLE WANTED(NAME VARCHAR(30),
+AGE VARCHAR(3),
+NATIONALITY VARCHAR(20),
+CRIME VARCHAR(100),
+IMG LONGblob)
+;
+
+create table curaffairs(ano varchar(3),
+affair varchar(500))
+;
+
